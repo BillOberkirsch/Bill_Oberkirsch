@@ -103,20 +103,72 @@ header nav a {
 }
 main{
     flex:1;
+    flex-direction: column;
     display:flex;
     flex-wrap: wrap;
 }
+
 aside{
-    flex: 1;
-    display:flex;
-    flex-wrap: wrap;
+    flex:15%;
     background-color: #b9c6ae;
+    padding: 20px;
     text-align: right;
-    align-items: center;
-    font-size: 30px;
-    font-weight: bold;
-    max-width: 157px;
+    padding-left:10px;
 }
+
+section {
+    flex:85%;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.verticalLine{
+    padding-right: 10px;
+    border-right: 6px solid green;
+    height: 75%;
+    margin-left: 15px;
+}
+
+.placeHolder{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+.divImgParent1{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.div_Container_Parent
+{
+    width: 100%;
+    height: auto;
+}
+.div_Container_other::after {
+    display: flex;
+    content: "";
+    clear: both;
+    display: table;
+   }
+
+   .divImgOtherChild {
+    flex: 33.33%;
+    padding: 5px;
+    width: 30%;
+    height: auto;
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+   }
+
+/* .divImgChild1{
+    width: 100%;
+    height: auto;
+} */
+
+
 
 @media screen and (max-width:700px)
 {
@@ -126,10 +178,6 @@ aside{
         padding-top: 15px;
     }
 }
-/* aside div{
-    flex:1;
-
-} */
 
 @media screen and (max-width:700px)
 {
@@ -139,152 +187,25 @@ aside{
     }
 }
 
-aside  .vl{
-    border-left: 6px solid green;
-    height: 80px;
-    position: relative;
-    margin-left: 6px;
-}
+
 @media screen and (max-width:700px)
 {
-    aside .vl{
+    .verticalLine{
         flex-wrap: wrap;
         border-left: 0;
-        height: 7px;
-        border-top: 6px solid green;
-        width: 79%;
+        /* height: 7px; */
+        width: 40%;
         position: relative;
+        border-right: 0;
+        border-bottom: 6px solid green;
     }
 }
 
-.about_me{
+/* .about_me{
     flex-wrap: wrap;
-}
-
-.placeHolder{
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    /* padding: 10px; */
-    flex: 0 0 400px;
-    /* max-width: 80%; */
-}
+} */
 
 
-/* body {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.3;
-}
-
-.banner {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1%;
-    justify-content: space-between;
-    background-color:#082f53;
-    color: #fff;
-}
-
-.card {
-    width:auto;
-    display:flex;
-    flex-wrap: wrap;
-    flex: 1 0 auto;
-}
-
-.MyName {
-    margin-top: 75px;
-    margin-left: 20px;
-    font-size: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.banner .header_img {
-    border-style: solid;
-    border-radius: 50px;
-} 
-.banner nav{
-    padding-top:75px;
-    float:right;
-}
-.banner nav a{
-    color: #ffffff;
-    font-size:30px;
-    text-decoration: underline;
-    text-decoration-color: #00ffff;
-    text-underline-offset: 5px;
-}
-.card header{
-    text-align: right;
-}
-
-.myImage{
-    width: 150px;
-}
-
-main{
-    display:flex;
-    justify-content: space-between;
-    background-color: #75d4cc;
-    align-items: stretch;
-}
-main .mainAside{
-    flex:1;
-    width : 12em;
-    height : 40em;
-   
-    border-width: 0.1em;
-    border-style: dashed;
-    border-color: red;
-}
-
- div {
-    width:100%;
-    display:flex;
-    margin-left: 15px;
-    border-width: 0.1em;
-    border-style: dashed;
-    border-color: red;
-}
-
-.main_section {
-
-    width:500px;
-    height: 25%;
-    text-align: center;
-
-    border-width: 0.1em;
-    border-style: dashed;
-    border-color: red;
-}
 
 
-.content{
-    width:100%;
-    display: inline-block;
-    margin-left:20px;
-}
-
-@media screen and (max-width:900px)
-{
-   .banner nav{
-        display:flex;
-        flex-direction: column;
-        padding-top: 50px;
-    }
-}
-@media screen and (max-width:900px)
-{
- .banner nav a{
-        font-size: 15px;
-    }
-}
-.wire_frame{
-    
-    border-width: 0.1em;
-    border-style: dashed;
-    border-color: red;
-}
- */
 
